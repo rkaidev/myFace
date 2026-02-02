@@ -36,7 +36,7 @@ Foreground color
 
 Background color
 
-12h / 24h time format (device dependent)
+12h or 24h time format (device dependent)
 
 ## Development
 ### Requirements
