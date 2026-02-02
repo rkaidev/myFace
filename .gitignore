@@ -1,0 +1,34 @@
+# Connect IQ build output
+bin/
+out/
+*.prg
+*.iq
+
+# SDK / tools (never commit)
+connectiq/
+*.sdk
+monkeyc
+
+# Simulator
+.simulator/
+.simulator-data/
+.simulator-state/
+
+# Jungle build cache
+.jungle/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
