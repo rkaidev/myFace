@@ -2,7 +2,7 @@
 
 ## A minimal, open-source Garmin Connect IQ watch face focused on clarity, performance, and battery efficiency.
 
-Designed and tested primarily on the Garmin Fenix 6X Pro Solar, with broader compatibility across Connect IQ–supported devices.
+Note: This project is primarily made for my own use and testing. It may work on other devices, but functionality is not guaranteed. Feel free to clone and test it yourself if you know what you’re doing.
 
 ### Features
 
