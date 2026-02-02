@@ -1,25 +1,25 @@
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
 import Toybox.Application;
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
 import Toybox.Graphics;
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 6; @symbol_classdef = [Background,6,6,16]; @symbol_extends<0> = [WatchUi,6,25,32]; @symbol_extends<1> = [Drawable,6,33,41]; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 6; @symbol_classdef = [Background,6,6,16]; @symbol_extends<0> = [WatchUi,6,25,32]; @symbol_extends<1> = [Drawable,6,33,41]; ]
 class Background extends WatchUi.Drawable {
-    [ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 6; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 6; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
     function initialize() as Void {
-_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26_14_4_start:
-[ "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc" 9 8 ]
-        [ "_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26_14_4_start" "_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26_14_4_stop" ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_8_26_14_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc" 9 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_8_26_14_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_8_26_14_4_stop" ]
         %dictionary.1 = local;
         symbol [ dictionary %dictionary.1 9 12 22 ];
         %tmp.1 = newd 1;
@@ -30,7 +30,7 @@ _home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26
         %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
         lputv %dictionary.1 %tmp.6;
         symbol [ dictionary %dictionary.1 9 12 22 ];
-[ "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc" 13 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc" 13 8 ]
         symbol [ Drawable %tmp.8 13 8 16 ];
         %tmp.8 = getv ? :Drawable;
         symbol [ initialize %tmp.9 13 17 27 ];
@@ -38,12 +38,12 @@ _home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26
         %tmp.10 = lgetv %dictionary.1;
         symbol [ dictionary %tmp.10 13 28 38 ];
         invoke %tmp.8 %tmp.9(%tmp.10);
-_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_8_26_14_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_8_26_14_4_stop:
     }
-    [ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 16; @symbol_functiondef = [draw,16,13,17]; @symbol_param<0> = [dc,16,18,20]; @symbol_param<0>_type<0> = [Dc,16,24,26]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 16; @symbol_functiondef = [draw,16,13,17]; @symbol_param<0> = [dc,16,18,20]; @symbol_param<0>_type<0> = [Dc,16,24,26]; ]
     function draw(dc as Dc) as Void {
-_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_16_36_22_4_start:
-[ "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc" 17 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_16_36_22_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc" 17 8 ]
         %tmp.1 = lgetv %dc;
         symbol [ dc %tmp.1 17 8 10 ];
         symbol [ setColor %tmp.2 17 11 19 ];
@@ -63,15 +63,15 @@ _home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_16_3
         %tmp.10 = as %tmp.9 Number;
         symbol [ Number %tmp.10 19 66 72 ];
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.10);
-[ "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc" 21 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc" 21 8 ]
         %tmp.11 = lgetv %dc;
         symbol [ dc %tmp.11 21 8 10 ];
         symbol [ clear %tmp.12 21 11 16 ];
         %tmp.12 = getv function %tmp.11 :clear;
         invoke %tmp.11 %tmp.12();
-_home_rich_fernlabsdev_Watch_Faces_Garmin_myFace_source_myFaceBackground_mc_16_36_22_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceBackground_mc_16_36_22_4_stop:
     }
 }
-[ @file = "/home/rich/fernlabsdev/Watch-Faces/Garmin/myFace/source/myFaceBackground.mc"; @line = 1; ]
+[ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceBackground.mc"; @line = 1; ]
 <init> {
 }
