@@ -12,13 +12,14 @@ class myFaceView extends WatchUi.WatchFace {
         WatchUi.WatchFace.initialize();
     }
 
-    function onLayout() {
+    // Fixed signature for onLayout as per Garmin SDK
+    function onLayout(dc) {
         // layout setup if needed
     }
 
     function drawTime(dc, time) {
-        dc.drawText(50, 50, Graphics.FONT_LARGE, time.hour.format("%02d"));
-        dc.drawText(120, 50, Graphics.FONT_MEDIUM, time.min.format("%02d"));
+        dc.drawText(50, 50, Graphics.FONT_MEDIUM, time.hour.format("%02d"));
+        dc.drawText(120, 50, Graphics.FONT_SMALL, time.min.format("%02d"));
     }
 
     function drawSteps(dc, steps) {
@@ -55,7 +56,14 @@ class myFaceView extends WatchUi.WatchFace {
 
         var rawHeight = (batteryLevel * innerH) / 100.0;
         var fillHeight = rawHeight.toNumber();
-        fillHeight = (fillHeight < 0) ? 0 : ((fillHeight > innerH) ? innerH : fillHeight);
+
+        // Clamp fillHeight to [0, innerH]
+        if (fillHeight < 0) {
+            fillHeight = 0;
+        }
+        if (fillHeight > innerH) {
+            fillHeight = innerH;
+        }
         if (batteryLevel > 0 && fillHeight < 1) {
             fillHeight = 1;
         }
@@ -70,12 +78,13 @@ class myFaceView extends WatchUi.WatchFace {
             fillColor = Graphics.COLOR_YELLOW;
         }
 
-        dc.setColor(fillColor);
+        dc.setColor(fillColor, Graphics.COLOR_BLACK);
         dc.fillRectangle(innerX, fillY, innerW, fillHeight);
 
-        dc.setColor(Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.drawRectangle(BAT_X, BAT_Y, BAT_W, BAT_H);
 
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.drawText(20, 10, Graphics.FONT_SMALL, batteryLevel.toString() + "%");
     }
 
@@ -118,59 +127,12 @@ class myFaceView extends WatchUi.WatchFace {
         drawDistance(dc, data["distance"]);
     }
 
-    function onUpdate() {
-        var dc = WatchUi.getDisplayContext();
-        dc.setColor(Graphics.COLOR_WHITE);
+    // Fixed signature for onUpdate as per Garmin SDK
+    function onUpdate(dc) {
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
 
-        var time = System.getClockTime();
-        var info = ActivityMonitor.getInfo();
-        var steps = info["steps"];
-        var distance = (info["distance"] != null) ? (info["distance"].toFloat() / 1000.0).toNumber() : 0;
-        var battery = System.getSystemStats().battery.toNumber();
-        var bodyBattery = info["bodyBattery"];  // safe access, null if missing
-
-        var settings = System.getDeviceSettings();
-        var badges = {
-            "bluetooth" => settings.phoneConnected,
-            "notification" => (settings.notificationCount > 0),
-            "alarm" => (settings.alarmCount > 0)
-        };
-
-        var conditions = Weather.getCurrentConditions();
-        var temp = null;
-        var weatherIcon = "?";
-        if (conditions != null) {
-            if (conditions.temperature != null) {
-                temp = conditions.temperature;
-            }
-
-            var cond = conditions.condition;
-            if (cond == Weather.CONDITION_CLEAR || cond == Weather.CONDITION_MOSTLY_CLEAR) {
-                weatherIcon = "SUN";
-            }
-            else if (cond == Weather.CONDITION_RAIN || cond == Weather.CONDITION_LIGHT_RAIN) {
-                weatherIcon = "RAIN";
-            }
-            else if (cond == Weather.CONDITION_CLOUDY || cond == Weather.CONDITION_PARTLY_CLOUDY) {
-                weatherIcon = "CLOUD";
-            }
-            else {
-                weatherIcon = "?";
-            }
-        }
-
-        var data = {
-            "time" => time,
-            "steps" => steps,
-            "battery" => battery,
-            "bodyBattery" => bodyBattery,
-            "badges" => badges,
-            "temperature" => temp,
-            "weatherIcon" => weatherIcon,
-            "distance" => distance
-        };
-
-        draw(dc, data);
+        // Minimal safe render to verify runtime stability
+        dc.drawText(40, 120, Graphics.FONT_SMALL, "HELLO, WHOLE WORLD", Graphics.TEXT_JUSTIFY_LEFT);
     }
 }

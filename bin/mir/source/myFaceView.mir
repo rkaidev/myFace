@@ -34,1174 +34,838 @@ _Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_11_26_13_4_star
         invoke %tmp.2 %tmp.3();
 _Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_11_26_13_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 15; @symbol_functiondef = [onLayout,15,13,21]; ]
-    function onLayout() {
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 16; @symbol_functiondef = [onLayout,16,13,21]; @symbol_param<0> = [dc,16,22,24]; ]
+    function onLayout(dc) {
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 19; @symbol_functiondef = [drawTime,19,13,21]; @symbol_param<0> = [dc,19,22,24]; @symbol_param<1> = [time,19,26,30]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 20; @symbol_functiondef = [drawTime,20,13,21]; @symbol_param<0> = [dc,20,22,24]; @symbol_param<1> = [time,20,26,30]; ]
     function drawTime(dc, time) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_19_32_22_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 20 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_20_32_23_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 21 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 20 8 10 ];
-        symbol [ drawText %tmp.2 20 11 19 ];
+        symbol [ dc %tmp.1 21 8 10 ];
+        symbol [ drawText %tmp.2 21 11 19 ];
         %tmp.2 = getv function %tmp.1 :drawText;
         %tmp.3 = 50;
         %tmp.4 = 50;
-        symbol [ Graphics %tmp.5 20 28 36 ];
+        symbol [ Graphics %tmp.5 21 28 36 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.6 20 37 47 ];
-        %tmp.6 = getv %tmp.5 :FONT_LARGE;
+        symbol [ FONT_MEDIUM %tmp.6 21 37 48 ];
+        %tmp.6 = getv %tmp.5 :FONT_MEDIUM;
         %tmp.7 = lgetv %time;
-        symbol [ time %tmp.7 20 49 53 ];
-        symbol [ hour %tmp.8 20 54 58 ];
+        symbol [ time %tmp.7 21 50 54 ];
+        symbol [ hour %tmp.8 21 55 59 ];
         %tmp.8 = getv %tmp.7 :hour;
-        symbol [ format %tmp.9 20 59 65 ];
+        symbol [ format %tmp.9 21 60 66 ];
         %tmp.9 = getv function %tmp.8 :format;
         %tmp.10 = "%02d";
         %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.6, %tmp.11);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 21 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 22 8 ]
         %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 21 8 10 ];
-        symbol [ drawText %tmp.13 21 11 19 ];
+        symbol [ dc %tmp.12 22 8 10 ];
+        symbol [ drawText %tmp.13 22 11 19 ];
         %tmp.13 = getv function %tmp.12 :drawText;
         %tmp.14 = 120;
         %tmp.15 = 50;
-        symbol [ Graphics %tmp.16 21 29 37 ];
+        symbol [ Graphics %tmp.16 22 29 37 ];
         %tmp.16 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.17 21 38 49 ];
-        %tmp.17 = getv %tmp.16 :FONT_MEDIUM;
+        symbol [ FONT_SMALL %tmp.17 22 38 48 ];
+        %tmp.17 = getv %tmp.16 :FONT_SMALL;
         %tmp.18 = lgetv %time;
-        symbol [ time %tmp.18 21 51 55 ];
-        symbol [ min %tmp.19 21 56 59 ];
+        symbol [ time %tmp.18 22 50 54 ];
+        symbol [ min %tmp.19 22 55 58 ];
         %tmp.19 = getv %tmp.18 :min;
-        symbol [ format %tmp.20 21 60 66 ];
+        symbol [ format %tmp.20 22 59 65 ];
         %tmp.20 = getv function %tmp.19 :format;
         %tmp.21 = "%02d";
         %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
         invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.17, %tmp.22);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_19_32_22_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_20_32_23_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 24; @symbol_functiondef = [drawSteps,24,13,22]; @symbol_param<0> = [dc,24,23,25]; @symbol_param<1> = [steps,24,27,32]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 25; @symbol_functiondef = [drawSteps,25,13,22]; @symbol_param<0> = [dc,25,23,25]; @symbol_param<1> = [steps,25,27,32]; ]
     function drawSteps(dc, steps) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_24_34_32_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 25 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_24_34_32_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_24_34_32_4_stop" ]
-        %stepsText.1 = local;
-        symbol [ stepsText %stepsText.1 25 12 21 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_25_34_33_4_start:
 [ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 26 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_stmt:
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_25_34_33_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_25_34_33_4_stop" ]
+        %stepsText.1 = local;
+        symbol [ stepsText %stepsText.1 26 12 21 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 27 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_stmt:
         %tmp.1 = lgetv %steps;
-        symbol [ steps %tmp.1 26 12 17 ];
+        symbol [ steps %tmp.1 27 12 17 ];
         %tmp.2 = 1000;
         %tmp.3 = gt %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_26_28_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 27 12 ]
+        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_else_false;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_26_29_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 28 12 ]
         %tmp.4 = lgetv %steps;
-        symbol [ steps %tmp.4 27 25 30 ];
-        symbol [ toFloat %tmp.5 27 31 38 ];
+        symbol [ steps %tmp.4 28 25 30 ];
+        symbol [ toFloat %tmp.5 28 31 38 ];
         %tmp.5 = getv function %tmp.4 :toFloat;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = 1000.0;
         %tmp.8 = div %tmp.6 %tmp.7;
-        symbol [ format %tmp.9 27 51 57 ];
+        symbol [ format %tmp.9 28 51 57 ];
         %tmp.9 = getv function %tmp.8 :format;
         %tmp.10 = "%.1fk";
         %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
         lputv %stepsText.1 %tmp.11;
-        symbol [ stepsText %stepsText.1 27 12 21 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_26_28_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_else_false:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_28_15_30_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 29 12 ]
+        symbol [ stepsText %stepsText.1 28 12 21 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_26_29_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_else_false:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_29_15_31_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 30 12 ]
         %tmp.12 = lgetv %steps;
-        symbol [ steps %tmp.12 29 24 29 ];
-        symbol [ toString %tmp.13 29 30 38 ];
+        symbol [ steps %tmp.12 30 24 29 ];
+        symbol [ toString %tmp.13 30 30 38 ];
         %tmp.13 = getv function %tmp.12 :toString;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         lputv %stepsText.1 %tmp.14;
-        symbol [ stepsText %stepsText.1 29 12 21 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_28_15_30_8_stop:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_26_8_30_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 31 8 ]
+        symbol [ stepsText %stepsText.1 30 12 21 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_29_15_31_8_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_27_8_31_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 32 8 ]
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 31 8 10 ];
-        symbol [ drawText %tmp.16 31 11 19 ];
+        symbol [ dc %tmp.15 32 8 10 ];
+        symbol [ drawText %tmp.16 32 11 19 ];
         %tmp.16 = getv function %tmp.15 :drawText;
         %tmp.17 = 10;
         %tmp.18 = 200;
-        symbol [ Graphics %tmp.19 31 29 37 ];
+        symbol [ Graphics %tmp.19 32 29 37 ];
         %tmp.19 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.20 31 38 48 ];
+        symbol [ FONT_SMALL %tmp.20 32 38 48 ];
         %tmp.20 = getv %tmp.19 :FONT_SMALL;
         %tmp.21 = "STEPS ";
         %tmp.22 = lgetv %stepsText.1;
-        symbol [ stepsText %tmp.22 31 61 70 ];
+        symbol [ stepsText %tmp.22 32 61 70 ];
         %tmp.23 = add %tmp.21 %tmp.22;
         invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18, %tmp.20, %tmp.23);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_24_34_32_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_25_34_33_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 34; @symbol_functiondef = [drawBattery,34,13,24]; @symbol_param<0> = [dc,34,25,27]; @symbol_param<1> = [batteryLevel,34,29,41]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 35; @symbol_functiondef = [drawBattery,35,13,24]; @symbol_param<0> = [dc,35,25,27]; @symbol_param<1> = [batteryLevel,35,29,41]; ]
     function drawBattery(dc, batteryLevel) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 35 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_8_37_8_if_stmt:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 36 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_8_38_8_if_stmt:
         %tmp.1 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.1 35 12 24 ];
+        symbol [ batteryLevel %tmp.1 36 12 24 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_8_37_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_8_37_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_34_37_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 36 12 ]
+        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_8_38_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_8_38_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_34_38_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 37 12 ]
         %tmp.4 = 0;
         lputv %batteryLevel %tmp.4;
-        symbol [ batteryLevel %batteryLevel 36 12 24 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_34_37_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_8_37_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_8_37_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 38 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_8_40_8_if_stmt:
+        symbol [ batteryLevel %batteryLevel 37 12 24 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_34_38_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_8_38_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_36_8_38_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 39 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_8_41_8_if_stmt:
         %tmp.5 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.5 38 12 24 ];
+        symbol [ batteryLevel %tmp.5 39 12 24 ];
         %tmp.6 = 0;
         %tmp.7 = lt %tmp.5 %tmp.6;
-        bf %tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_8_40_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_8_40_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_30_40_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 39 12 ]
+        bf %tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_8_41_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_8_41_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_30_41_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 40 12 ]
         %tmp.8 = 0;
         lputv %batteryLevel %tmp.8;
-        symbol [ batteryLevel %batteryLevel 39 12 24 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_30_40_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_8_40_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_38_8_40_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 41 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_8_43_8_if_stmt:
+        symbol [ batteryLevel %batteryLevel 40 12 24 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_30_41_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_8_41_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_39_8_41_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 42 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_8_44_8_if_stmt:
         %tmp.9 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.9 41 12 24 ];
+        symbol [ batteryLevel %tmp.9 42 12 24 ];
         %tmp.10 = 100;
         %tmp.11 = gt %tmp.9 %tmp.10;
-        bf %tmp.11 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_8_43_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_8_43_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_32_43_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 42 12 ]
+        bf %tmp.11 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_8_44_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_8_44_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_32_44_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 43 12 ]
         %tmp.12 = 100;
         lputv %batteryLevel %tmp.12;
-        symbol [ batteryLevel %batteryLevel 42 12 24 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_32_43_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_8_43_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_41_8_43_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 45 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ batteryLevel %batteryLevel 43 12 24 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_32_44_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_8_44_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_42_8_44_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 46 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %BAT_X.1 = local;
-        symbol [ BAT_X %BAT_X.1 45 12 17 ];
+        symbol [ BAT_X %BAT_X.1 46 12 17 ];
         %tmp.13 = 0;
         lputv %BAT_X.1 %tmp.13;
-        symbol [ BAT_X %BAT_X.1 45 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 46 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ BAT_X %BAT_X.1 46 12 17 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 47 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %BAT_Y.2 = local;
-        symbol [ BAT_Y %BAT_Y.2 46 12 17 ];
+        symbol [ BAT_Y %BAT_Y.2 47 12 17 ];
         %tmp.14 = 0;
         lputv %BAT_Y.2 %tmp.14;
-        symbol [ BAT_Y %BAT_Y.2 46 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 47 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ BAT_Y %BAT_Y.2 47 12 17 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 48 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %BAT_W.3 = local;
-        symbol [ BAT_W %BAT_W.3 47 12 17 ];
+        symbol [ BAT_W %BAT_W.3 48 12 17 ];
         %tmp.15 = 10;
         lputv %BAT_W.3 %tmp.15;
-        symbol [ BAT_W %BAT_W.3 47 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 48 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ BAT_W %BAT_W.3 48 12 17 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 49 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %BAT_H.4 = local;
-        symbol [ BAT_H %BAT_H.4 48 12 17 ];
+        symbol [ BAT_H %BAT_H.4 49 12 17 ];
         %tmp.16 = 50;
         lputv %BAT_H.4 %tmp.16;
-        symbol [ BAT_H %BAT_H.4 48 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 49 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ BAT_H %BAT_H.4 49 12 17 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 50 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %BORDER.5 = local;
-        symbol [ BORDER %BORDER.5 49 12 18 ];
+        symbol [ BORDER %BORDER.5 50 12 18 ];
         %tmp.17 = 1;
         lputv %BORDER.5 %tmp.17;
-        symbol [ BORDER %BORDER.5 49 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 51 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ BORDER %BORDER.5 50 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 52 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %innerX.6 = local;
-        symbol [ innerX %innerX.6 51 12 18 ];
+        symbol [ innerX %innerX.6 52 12 18 ];
         %tmp.18 = lgetv %BAT_X.1;
-        symbol [ BAT_X %tmp.18 51 21 26 ];
+        symbol [ BAT_X %tmp.18 52 21 26 ];
         %tmp.19 = lgetv %BORDER.5;
-        symbol [ BORDER %tmp.19 51 29 35 ];
+        symbol [ BORDER %tmp.19 52 29 35 ];
         %tmp.20 = add %tmp.18 %tmp.19;
         lputv %innerX.6 %tmp.20;
-        symbol [ innerX %innerX.6 51 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 52 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ innerX %innerX.6 52 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 53 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %innerY.7 = local;
-        symbol [ innerY %innerY.7 52 12 18 ];
+        symbol [ innerY %innerY.7 53 12 18 ];
         %tmp.21 = lgetv %BAT_Y.2;
-        symbol [ BAT_Y %tmp.21 52 21 26 ];
+        symbol [ BAT_Y %tmp.21 53 21 26 ];
         %tmp.22 = lgetv %BORDER.5;
-        symbol [ BORDER %tmp.22 52 29 35 ];
+        symbol [ BORDER %tmp.22 53 29 35 ];
         %tmp.23 = add %tmp.21 %tmp.22;
         lputv %innerY.7 %tmp.23;
-        symbol [ innerY %innerY.7 52 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 53 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ innerY %innerY.7 53 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 54 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %innerW.8 = local;
-        symbol [ innerW %innerW.8 53 12 18 ];
+        symbol [ innerW %innerW.8 54 12 18 ];
         %tmp.24 = lgetv %BAT_W.3;
-        symbol [ BAT_W %tmp.24 53 21 26 ];
+        symbol [ BAT_W %tmp.24 54 21 26 ];
         %tmp.25 = 2;
         %tmp.26 = lgetv %BORDER.5;
-        symbol [ BORDER %tmp.26 53 34 40 ];
+        symbol [ BORDER %tmp.26 54 34 40 ];
         %tmp.27 = mul %tmp.25 %tmp.26;
         %tmp.28 = sub %tmp.24 %tmp.27;
         lputv %innerW.8 %tmp.28;
-        symbol [ innerW %innerW.8 53 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 54 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ innerW %innerW.8 54 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 55 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %innerH.9 = local;
-        symbol [ innerH %innerH.9 54 12 18 ];
+        symbol [ innerH %innerH.9 55 12 18 ];
         %tmp.29 = lgetv %BAT_H.4;
-        symbol [ BAT_H %tmp.29 54 21 26 ];
+        symbol [ BAT_H %tmp.29 55 21 26 ];
         %tmp.30 = 2;
         %tmp.31 = lgetv %BORDER.5;
-        symbol [ BORDER %tmp.31 54 34 40 ];
+        symbol [ BORDER %tmp.31 55 34 40 ];
         %tmp.32 = mul %tmp.30 %tmp.31;
         %tmp.33 = sub %tmp.29 %tmp.32;
         lputv %innerH.9 %tmp.33;
-        symbol [ innerH %innerH.9 54 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 56 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ innerH %innerH.9 55 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 57 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %rawHeight.10 = local;
-        symbol [ rawHeight %rawHeight.10 56 12 21 ];
+        symbol [ rawHeight %rawHeight.10 57 12 21 ];
         %tmp.34 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.34 56 25 37 ];
+        symbol [ batteryLevel %tmp.34 57 25 37 ];
         %tmp.35 = lgetv %innerH.9;
-        symbol [ innerH %tmp.35 56 40 46 ];
+        symbol [ innerH %tmp.35 57 40 46 ];
         %tmp.36 = mul %tmp.34 %tmp.35;
         %tmp.37 = 100.0;
         %tmp.38 = div %tmp.36 %tmp.37;
         lputv %rawHeight.10 %tmp.38;
-        symbol [ rawHeight %rawHeight.10 56 12 21 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 57 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        symbol [ rawHeight %rawHeight.10 57 12 21 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 58 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %fillHeight.11 = local;
-        symbol [ fillHeight %fillHeight.11 57 12 22 ];
+        symbol [ fillHeight %fillHeight.11 58 12 22 ];
         %tmp.39 = lgetv %rawHeight.10;
-        symbol [ rawHeight %tmp.39 57 25 34 ];
-        symbol [ toNumber %tmp.40 57 35 43 ];
+        symbol [ rawHeight %tmp.39 58 25 34 ];
+        symbol [ toNumber %tmp.40 58 35 43 ];
         %tmp.40 = getv function %tmp.39 :toNumber;
         %tmp.41 = invoke %tmp.39 %tmp.40();
         lputv %fillHeight.11 %tmp.41;
-        symbol [ fillHeight %fillHeight.11 57 12 22 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 58 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_begin:
+        symbol [ fillHeight %fillHeight.11 58 12 22 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 61 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_8_63_8_if_stmt:
         %tmp.42 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.42 58 22 32 ];
+        symbol [ fillHeight %tmp.42 61 12 22 ];
         %tmp.43 = 0;
         %tmp.44 = lt %tmp.42 %tmp.43;
-        bf %tmp.44 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_true:
+        bf %tmp.44 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_8_63_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_8_63_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_28_63_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 62 12 ]
         %tmp.45 = 0;
-        push %tmp.45;
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_else_false:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_begin:
+        lputv %fillHeight.11 %tmp.45;
+        symbol [ fillHeight %fillHeight.11 62 12 22 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_28_63_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_8_63_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_61_8_63_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 64 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_8_66_8_if_stmt:
         %tmp.46 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.46 58 46 56 ];
+        symbol [ fillHeight %tmp.46 64 12 22 ];
         %tmp.47 = lgetv %innerH.9;
-        symbol [ innerH %tmp.47 58 59 65 ];
+        symbol [ innerH %tmp.47 64 25 31 ];
         %tmp.48 = gt %tmp.46 %tmp.47;
-        bf %tmp.48 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_true:
+        bf %tmp.48 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_8_66_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_8_66_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_33_66_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 65 12 ]
         %tmp.49 = lgetv %innerH.9;
-        symbol [ innerH %tmp.49 58 69 75 ];
-        push %tmp.49;
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_else_false:
-        %tmp.50 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.50 58 78 88 ];
-        push %tmp.50;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_end:
-        %tmp.51 = phi [%tmp.48 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_begin] [%tmp.49 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_true] [%tmp.50 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_else_false] [%tmp.51 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_45_58_78_end];
-        push %tmp.51;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_end:
-        %tmp.52 = phi [%tmp.44 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_begin] [%tmp.45 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_true] [%tmp.51 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_else_false] [%tmp.52 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_58_21_58_88_end];
-        lputv %fillHeight.11 %tmp.52;
-        symbol [ fillHeight %fillHeight.11 58 8 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 59 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_stmt:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_12_59_45_begin:
-        %tmp.53 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.53 59 12 24 ];
-        %tmp.54 = 0;
-        %tmp.55 = gt %tmp.53 %tmp.54;
-        bf %tmp.55 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_32_59_45_true:
-        %tmp.56 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.56 59 32 42 ];
+        symbol [ innerH %tmp.49 65 25 31 ];
+        lputv %fillHeight.11 %tmp.49;
+        symbol [ fillHeight %fillHeight.11 65 12 22 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_33_66_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_8_66_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_64_8_66_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 67 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_stmt:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_12_67_45_begin:
+        %tmp.50 = lgetv %batteryLevel;
+        symbol [ batteryLevel %tmp.50 67 12 24 ];
+        %tmp.51 = 0;
+        %tmp.52 = gt %tmp.50 %tmp.51;
+        bf %tmp.52 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_32_67_45_true:
+        %tmp.53 = lgetv %fillHeight.11;
+        symbol [ fillHeight %tmp.53 67 32 42 ];
+        %tmp.54 = 1;
+        %tmp.55 = lt %tmp.53 %tmp.54;
+        push %tmp.55;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_32_67_45_end:
+        %tmp.56 = phi [%tmp.52 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_12_67_45_begin] [%tmp.55 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_32_67_45_true] [%tmp.56 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_32_67_45_end];
+        bf %tmp.56 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_48_69_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 68 12 ]
         %tmp.57 = 1;
-        %tmp.58 = lt %tmp.56 %tmp.57;
-        push %tmp.58;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_32_59_45_end:
-        %tmp.59 = phi [%tmp.55 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_12_59_45_begin] [%tmp.58 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_32_59_45_true] [%tmp.59 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_32_59_45_end];
-        bf %tmp.59 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_48_61_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 60 12 ]
-        %tmp.60 = 1;
-        lputv %fillHeight.11 %tmp.60;
-        symbol [ fillHeight %fillHeight.11 60 12 22 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_48_61_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_59_8_61_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 63 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
+        lputv %fillHeight.11 %tmp.57;
+        symbol [ fillHeight %fillHeight.11 68 12 22 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_48_69_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_67_8_69_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 71 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
         %fillY.12 = local;
-        symbol [ fillY %fillY.12 63 12 17 ];
-        %tmp.61 = lgetv %innerY.7;
-        symbol [ innerY %tmp.61 63 20 26 ];
-        %tmp.62 = lgetv %innerH.9;
-        symbol [ innerH %tmp.62 63 30 36 ];
-        %tmp.63 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.63 63 39 49 ];
-        %tmp.64 = sub %tmp.62 %tmp.63;
-        %tmp.65 = add %tmp.61 %tmp.64;
-        lputv %fillY.12 %tmp.65;
-        symbol [ fillY %fillY.12 63 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 65 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop" ]
-        %fillColor.13 = local;
-        symbol [ fillColor %fillColor.13 65 12 21 ];
-        symbol [ Graphics %tmp.66 65 24 32 ];
-        %tmp.66 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.67 65 33 44 ];
-        %tmp.67 = getv %tmp.66 :COLOR_GREEN;
-        lputv %fillColor.13 %tmp.67;
-        symbol [ fillColor %fillColor.13 65 12 21 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 66 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_stmt:
-        %tmp.68 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.68 66 12 24 ];
-        %tmp.69 = 20;
-        %tmp.70 = lt %tmp.68 %tmp.69;
-        bf %tmp.70 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_31_68_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 67 12 ]
-        symbol [ Graphics %tmp.71 67 24 32 ];
-        %tmp.71 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.72 67 33 42 ];
-        %tmp.72 = getv %tmp.71 :COLOR_RED;
-        lputv %fillColor.13 %tmp.72;
-        symbol [ fillColor %fillColor.13 67 12 21 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_31_68_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_false:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 69 13 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_13_71_8_if_stmt:
-        %tmp.73 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.73 69 17 29 ];
-        %tmp.74 = 50;
-        %tmp.75 = lt %tmp.73 %tmp.74;
-        bf %tmp.75 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_13_71_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_13_71_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_36_71_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 70 12 ]
-        symbol [ Graphics %tmp.76 70 24 32 ];
-        %tmp.76 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.77 70 33 45 ];
-        %tmp.77 = getv %tmp.76 :COLOR_YELLOW;
-        lputv %fillColor.13 %tmp.77;
-        symbol [ fillColor %fillColor.13 70 12 21 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_36_71_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_13_71_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_69_13_71_8_if_end:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_66_8_71_8_if_end:
+        symbol [ fillY %fillY.12 71 12 17 ];
+        %tmp.58 = lgetv %innerY.7;
+        symbol [ innerY %tmp.58 71 20 26 ];
+        %tmp.59 = lgetv %innerH.9;
+        symbol [ innerH %tmp.59 71 30 36 ];
+        %tmp.60 = lgetv %fillHeight.11;
+        symbol [ fillHeight %tmp.60 71 39 49 ];
+        %tmp.61 = sub %tmp.59 %tmp.60;
+        %tmp.62 = add %tmp.58 %tmp.61;
+        lputv %fillY.12 %tmp.62;
+        symbol [ fillY %fillY.12 71 12 17 ];
 [ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 73 8 ]
-        %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 73 8 10 ];
-        symbol [ setColor %tmp.79 73 11 19 ];
-        %tmp.79 = getv function %tmp.78 :setColor;
-        %tmp.80 = lgetv %fillColor.13;
-        symbol [ fillColor %tmp.80 73 20 29 ];
-        invoke %tmp.78 %tmp.79(%tmp.80);
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop" ]
+        %fillColor.13 = local;
+        symbol [ fillColor %fillColor.13 73 12 21 ];
+        symbol [ Graphics %tmp.63 73 24 32 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.64 73 33 44 ];
+        %tmp.64 = getv %tmp.63 :COLOR_GREEN;
+        lputv %fillColor.13 %tmp.64;
+        symbol [ fillColor %fillColor.13 73 12 21 ];
 [ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 74 8 ]
-        %tmp.81 = lgetv %dc;
-        symbol [ dc %tmp.81 74 8 10 ];
-        symbol [ fillRectangle %tmp.82 74 11 24 ];
-        %tmp.82 = getv function %tmp.81 :fillRectangle;
-        %tmp.83 = lgetv %innerX.6;
-        symbol [ innerX %tmp.83 74 25 31 ];
-        %tmp.84 = lgetv %fillY.12;
-        symbol [ fillY %tmp.84 74 33 38 ];
-        %tmp.85 = lgetv %innerW.8;
-        symbol [ innerW %tmp.85 74 40 46 ];
-        %tmp.86 = lgetv %fillHeight.11;
-        symbol [ fillHeight %tmp.86 74 48 58 ];
-        invoke %tmp.81 %tmp.82(%tmp.83, %tmp.84, %tmp.85, %tmp.86);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 76 8 ]
-        %tmp.87 = lgetv %dc;
-        symbol [ dc %tmp.87 76 8 10 ];
-        symbol [ setColor %tmp.88 76 11 19 ];
-        %tmp.88 = getv function %tmp.87 :setColor;
-        symbol [ Graphics %tmp.89 76 20 28 ];
-        %tmp.89 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.90 76 29 40 ];
-        %tmp.90 = getv %tmp.89 :COLOR_BLACK;
-        invoke %tmp.87 %tmp.88(%tmp.90);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 77 8 ]
-        %tmp.91 = lgetv %dc;
-        symbol [ dc %tmp.91 77 8 10 ];
-        symbol [ drawRectangle %tmp.92 77 11 24 ];
-        %tmp.92 = getv function %tmp.91 :drawRectangle;
-        %tmp.93 = lgetv %BAT_X.1;
-        symbol [ BAT_X %tmp.93 77 25 30 ];
-        %tmp.94 = lgetv %BAT_Y.2;
-        symbol [ BAT_Y %tmp.94 77 32 37 ];
-        %tmp.95 = lgetv %BAT_W.3;
-        symbol [ BAT_W %tmp.95 77 39 44 ];
-        %tmp.96 = lgetv %BAT_H.4;
-        symbol [ BAT_H %tmp.96 77 46 51 ];
-        invoke %tmp.91 %tmp.92(%tmp.93, %tmp.94, %tmp.95, %tmp.96);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 79 8 ]
-        %tmp.97 = lgetv %dc;
-        symbol [ dc %tmp.97 79 8 10 ];
-        symbol [ drawText %tmp.98 79 11 19 ];
-        %tmp.98 = getv function %tmp.97 :drawText;
-        %tmp.99 = 20;
-        %tmp.100 = 10;
-        symbol [ Graphics %tmp.101 79 28 36 ];
-        %tmp.101 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.102 79 37 47 ];
-        %tmp.102 = getv %tmp.101 :FONT_SMALL;
-        %tmp.103 = lgetv %batteryLevel;
-        symbol [ batteryLevel %tmp.103 79 49 61 ];
-        symbol [ toString %tmp.104 79 62 70 ];
-        %tmp.104 = getv function %tmp.103 :toString;
-        %tmp.105 = invoke %tmp.103 %tmp.104();
-        %tmp.106 = "%";
-        %tmp.107 = add %tmp.105 %tmp.106;
-        invoke %tmp.97 %tmp.98(%tmp.99, %tmp.100, %tmp.102, %tmp.107);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_34_43_80_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_stmt:
+        %tmp.65 = lgetv %batteryLevel;
+        symbol [ batteryLevel %tmp.65 74 12 24 ];
+        %tmp.66 = 20;
+        %tmp.67 = lt %tmp.65 %tmp.66;
+        bf %tmp.67 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_false;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_31_76_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 75 12 ]
+        symbol [ Graphics %tmp.68 75 24 32 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.69 75 33 42 ];
+        %tmp.69 = getv %tmp.68 :COLOR_RED;
+        lputv %fillColor.13 %tmp.69;
+        symbol [ fillColor %fillColor.13 75 12 21 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_31_76_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_false:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 77 13 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_13_79_8_if_stmt:
+        %tmp.70 = lgetv %batteryLevel;
+        symbol [ batteryLevel %tmp.70 77 17 29 ];
+        %tmp.71 = 50;
+        %tmp.72 = lt %tmp.70 %tmp.71;
+        bf %tmp.72 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_13_79_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_13_79_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_36_79_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 78 12 ]
+        symbol [ Graphics %tmp.73 78 24 32 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.74 78 33 45 ];
+        %tmp.74 = getv %tmp.73 :COLOR_YELLOW;
+        lputv %fillColor.13 %tmp.74;
+        symbol [ fillColor %fillColor.13 78 12 21 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_36_79_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_13_79_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_77_13_79_8_if_end:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_74_8_79_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 81 8 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 81 8 10 ];
+        symbol [ setColor %tmp.76 81 11 19 ];
+        %tmp.76 = getv function %tmp.75 :setColor;
+        %tmp.77 = lgetv %fillColor.13;
+        symbol [ fillColor %tmp.77 81 20 29 ];
+        symbol [ Graphics %tmp.78 81 31 39 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.79 81 40 51 ];
+        %tmp.79 = getv %tmp.78 :COLOR_BLACK;
+        invoke %tmp.75 %tmp.76(%tmp.77, %tmp.79);
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 82 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 82 8 10 ];
+        symbol [ fillRectangle %tmp.81 82 11 24 ];
+        %tmp.81 = getv function %tmp.80 :fillRectangle;
+        %tmp.82 = lgetv %innerX.6;
+        symbol [ innerX %tmp.82 82 25 31 ];
+        %tmp.83 = lgetv %fillY.12;
+        symbol [ fillY %tmp.83 82 33 38 ];
+        %tmp.84 = lgetv %innerW.8;
+        symbol [ innerW %tmp.84 82 40 46 ];
+        %tmp.85 = lgetv %fillHeight.11;
+        symbol [ fillHeight %tmp.85 82 48 58 ];
+        invoke %tmp.80 %tmp.81(%tmp.82, %tmp.83, %tmp.84, %tmp.85);
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 84 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 84 8 10 ];
+        symbol [ setColor %tmp.87 84 11 19 ];
+        %tmp.87 = getv function %tmp.86 :setColor;
+        symbol [ Graphics %tmp.88 84 20 28 ];
+        %tmp.88 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.89 84 29 40 ];
+        %tmp.89 = getv %tmp.88 :COLOR_BLACK;
+        symbol [ Graphics %tmp.90 84 42 50 ];
+        %tmp.90 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.91 84 51 62 ];
+        %tmp.91 = getv %tmp.90 :COLOR_BLACK;
+        invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91);
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 85 8 ]
+        %tmp.92 = lgetv %dc;
+        symbol [ dc %tmp.92 85 8 10 ];
+        symbol [ drawRectangle %tmp.93 85 11 24 ];
+        %tmp.93 = getv function %tmp.92 :drawRectangle;
+        %tmp.94 = lgetv %BAT_X.1;
+        symbol [ BAT_X %tmp.94 85 25 30 ];
+        %tmp.95 = lgetv %BAT_Y.2;
+        symbol [ BAT_Y %tmp.95 85 32 37 ];
+        %tmp.96 = lgetv %BAT_W.3;
+        symbol [ BAT_W %tmp.96 85 39 44 ];
+        %tmp.97 = lgetv %BAT_H.4;
+        symbol [ BAT_H %tmp.97 85 46 51 ];
+        invoke %tmp.92 %tmp.93(%tmp.94, %tmp.95, %tmp.96, %tmp.97);
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 87 8 ]
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 87 8 10 ];
+        symbol [ setColor %tmp.99 87 11 19 ];
+        %tmp.99 = getv function %tmp.98 :setColor;
+        symbol [ Graphics %tmp.100 87 20 28 ];
+        %tmp.100 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.101 87 29 40 ];
+        %tmp.101 = getv %tmp.100 :COLOR_WHITE;
+        symbol [ Graphics %tmp.102 87 42 50 ];
+        %tmp.102 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.103 87 51 62 ];
+        %tmp.103 = getv %tmp.102 :COLOR_BLACK;
+        invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 88 8 ]
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 88 8 10 ];
+        symbol [ drawText %tmp.105 88 11 19 ];
+        %tmp.105 = getv function %tmp.104 :drawText;
+        %tmp.106 = 20;
+        %tmp.107 = 10;
+        symbol [ Graphics %tmp.108 88 28 36 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.109 88 37 47 ];
+        %tmp.109 = getv %tmp.108 :FONT_SMALL;
+        %tmp.110 = lgetv %batteryLevel;
+        symbol [ batteryLevel %tmp.110 88 49 61 ];
+        symbol [ toString %tmp.111 88 62 70 ];
+        %tmp.111 = getv function %tmp.110 :toString;
+        %tmp.112 = invoke %tmp.110 %tmp.111();
+        %tmp.113 = "%";
+        %tmp.114 = add %tmp.112 %tmp.113;
+        invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.109, %tmp.114);
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_35_43_89_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 82; @symbol_functiondef = [drawBodyBattery,82,13,28]; @symbol_param<0> = [dc,82,29,31]; @symbol_param<1> = [bodyBattery,82,33,44]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 91; @symbol_functiondef = [drawBodyBattery,91,13,28]; @symbol_param<0> = [dc,91,29,31]; @symbol_param<1> = [bodyBattery,91,33,44]; ]
     function drawBodyBattery(dc, bodyBattery) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_82_46_85_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 83 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_82_46_85_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_82_46_85_4_stop" ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_91_46_94_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 92 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_91_46_94_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_91_46_94_4_stop" ]
         %bbText.1 = local;
-        symbol [ bbText %bbText.1 83 12 18 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_begin:
+        symbol [ bbText %bbText.1 92 12 18 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_begin:
         %tmp.1 = lgetv %bodyBattery;
-        symbol [ bodyBattery %tmp.1 83 22 33 ];
+        symbol [ bodyBattery %tmp.1 92 22 33 ];
         %tmp.2 = null;
         %tmp.3 = ne %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_true:
+        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_else_false;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_true:
         %tmp.4 = lgetv %bodyBattery;
-        symbol [ bodyBattery %tmp.4 83 45 56 ];
+        symbol [ bodyBattery %tmp.4 92 45 56 ];
         %tmp.5 = as %tmp.4 { (!Null) };
-        symbol [ toString %tmp.6 83 57 65 ];
+        symbol [ toString %tmp.6 92 57 65 ];
         %tmp.6 = getv function %tmp.5 :toString;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         push %tmp.7;
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_else_false:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_else_false:
         %tmp.8 = "N/A";
         push %tmp.8;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_end:
-        %tmp.9 = phi [%tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_begin] [%tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_true] [%tmp.8 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_else_false] [%tmp.9 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_83_21_83_70_end];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_end:
+        %tmp.9 = phi [%tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_begin] [%tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_true] [%tmp.8 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_else_false] [%tmp.9 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_92_21_92_70_end];
         lputv %bbText.1 %tmp.9;
-        symbol [ bbText %bbText.1 83 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 84 8 ]
+        symbol [ bbText %bbText.1 92 12 18 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 93 8 ]
         %tmp.10 = lgetv %dc;
-        symbol [ dc %tmp.10 84 8 10 ];
-        symbol [ drawText %tmp.11 84 11 19 ];
+        symbol [ dc %tmp.10 93 8 10 ];
+        symbol [ drawText %tmp.11 93 11 19 ];
         %tmp.11 = getv function %tmp.10 :drawText;
         %tmp.12 = 50;
         %tmp.13 = 100;
-        symbol [ Graphics %tmp.14 84 29 37 ];
+        symbol [ Graphics %tmp.14 93 29 37 ];
         %tmp.14 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.15 84 38 48 ];
+        symbol [ FONT_SMALL %tmp.15 93 38 48 ];
         %tmp.15 = getv %tmp.14 :FONT_SMALL;
         %tmp.16 = "Body: ";
         %tmp.17 = lgetv %bbText.1;
-        symbol [ bbText %tmp.17 84 61 67 ];
+        symbol [ bbText %tmp.17 93 61 67 ];
         %tmp.18 = add %tmp.16 %tmp.17;
         invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15, %tmp.18);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_82_46_85_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_91_46_94_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 87; @symbol_functiondef = [drawBadges,87,13,23]; @symbol_param<0> = [dc,87,24,26]; @symbol_param<1> = [badges,87,28,34]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 96; @symbol_functiondef = [drawBadges,96,13,23]; @symbol_param<0> = [dc,96,24,26]; @symbol_param<1> = [badges,96,28,34]; ]
     function drawBadges(dc, badges) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_87_36_100_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 88 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_87_36_100_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_87_36_100_4_stop" ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_96_36_109_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 97 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_96_36_109_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_96_36_109_4_stop" ]
         %x.1 = local;
-        symbol [ x %x.1 88 12 13 ];
+        symbol [ x %x.1 97 12 13 ];
         %tmp.1 = 10;
         lputv %x.1 %tmp.1;
-        symbol [ x %x.1 88 12 13 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 89 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_8_92_8_if_stmt:
+        symbol [ x %x.1 97 12 13 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 98 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_8_101_8_if_stmt:
         %tmp.2 = lgetv %badges;
-        symbol [ badges %tmp.2 89 12 18 ];
+        symbol [ badges %tmp.2 98 12 18 ];
         %tmp.3 = "bluetooth";
         %tmp.4 = agetv %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_8_92_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_8_92_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_33_92_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 90 12 ]
+        bf %tmp.4 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_8_101_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_8_101_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_33_101_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 99 12 ]
         %tmp.5 = lgetv %dc;
-        symbol [ dc %tmp.5 90 12 14 ];
-        symbol [ drawText %tmp.6 90 15 23 ];
+        symbol [ dc %tmp.5 99 12 14 ];
+        symbol [ drawText %tmp.6 99 15 23 ];
         %tmp.6 = getv function %tmp.5 :drawText;
         %tmp.7 = lgetv %x.1;
-        symbol [ x %tmp.7 90 24 25 ];
+        symbol [ x %tmp.7 99 24 25 ];
         %tmp.8 = 300;
-        symbol [ Graphics %tmp.9 90 32 40 ];
+        symbol [ Graphics %tmp.9 99 32 40 ];
         %tmp.9 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.10 90 41 51 ];
+        symbol [ FONT_SMALL %tmp.10 99 41 51 ];
         %tmp.10 = getv %tmp.9 :FONT_SMALL;
         %tmp.11 = "BT";
         invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.10, %tmp.11);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 91 12 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 100 12 ]
         %tmp.12 = lgetv %x.1;
-        symbol [ x %tmp.12 91 12 13 ];
+        symbol [ x %tmp.12 100 12 13 ];
         %tmp.13 = 30;
         %tmp.14 = add %tmp.12 %tmp.13;
         lputv %x.1 %tmp.14;
-        symbol [ x %x.1 91 12 13 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_33_92_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_8_92_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_89_8_92_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 93 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_8_96_8_if_stmt:
+        symbol [ x %x.1 100 12 13 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_33_101_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_8_101_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_98_8_101_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 102 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_8_105_8_if_stmt:
         %tmp.15 = lgetv %badges;
-        symbol [ badges %tmp.15 93 12 18 ];
+        symbol [ badges %tmp.15 102 12 18 ];
         %tmp.16 = "notification";
         %tmp.17 = agetv %tmp.15 %tmp.16;
-        bf %tmp.17 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_8_96_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_8_96_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_36_96_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 94 12 ]
+        bf %tmp.17 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_8_105_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_8_105_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_36_105_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 103 12 ]
         %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 94 12 14 ];
-        symbol [ drawText %tmp.19 94 15 23 ];
+        symbol [ dc %tmp.18 103 12 14 ];
+        symbol [ drawText %tmp.19 103 15 23 ];
         %tmp.19 = getv function %tmp.18 :drawText;
         %tmp.20 = lgetv %x.1;
-        symbol [ x %tmp.20 94 24 25 ];
+        symbol [ x %tmp.20 103 24 25 ];
         %tmp.21 = 300;
-        symbol [ Graphics %tmp.22 94 32 40 ];
+        symbol [ Graphics %tmp.22 103 32 40 ];
         %tmp.22 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.23 94 41 51 ];
+        symbol [ FONT_SMALL %tmp.23 103 41 51 ];
         %tmp.23 = getv %tmp.22 :FONT_SMALL;
         %tmp.24 = "NTF";
         invoke %tmp.18 %tmp.19(%tmp.20, %tmp.21, %tmp.23, %tmp.24);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 95 12 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 104 12 ]
         %tmp.25 = lgetv %x.1;
-        symbol [ x %tmp.25 95 12 13 ];
+        symbol [ x %tmp.25 104 12 13 ];
         %tmp.26 = 30;
         %tmp.27 = add %tmp.25 %tmp.26;
         lputv %x.1 %tmp.27;
-        symbol [ x %x.1 95 12 13 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_36_96_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_8_96_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_93_8_96_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 97 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_8_99_8_if_stmt:
+        symbol [ x %x.1 104 12 13 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_36_105_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_8_105_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_8_105_8_if_end:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 106 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_8_108_8_if_stmt:
         %tmp.28 = lgetv %badges;
-        symbol [ badges %tmp.28 97 12 18 ];
+        symbol [ badges %tmp.28 106 12 18 ];
         %tmp.29 = "alarm";
         %tmp.30 = agetv %tmp.28 %tmp.29;
-        bf %tmp.30 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_8_99_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_8_99_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_29_99_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 98 12 ]
+        bf %tmp.30 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_8_108_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_8_108_8_if_true:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_29_108_8_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 107 12 ]
         %tmp.31 = lgetv %dc;
-        symbol [ dc %tmp.31 98 12 14 ];
-        symbol [ drawText %tmp.32 98 15 23 ];
+        symbol [ dc %tmp.31 107 12 14 ];
+        symbol [ drawText %tmp.32 107 15 23 ];
         %tmp.32 = getv function %tmp.31 :drawText;
         %tmp.33 = lgetv %x.1;
-        symbol [ x %tmp.33 98 24 25 ];
+        symbol [ x %tmp.33 107 24 25 ];
         %tmp.34 = 300;
-        symbol [ Graphics %tmp.35 98 32 40 ];
+        symbol [ Graphics %tmp.35 107 32 40 ];
         %tmp.35 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.36 98 41 51 ];
+        symbol [ FONT_SMALL %tmp.36 107 41 51 ];
         %tmp.36 = getv %tmp.35 :FONT_SMALL;
         %tmp.37 = "ALM";
         invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.36, %tmp.37);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_29_99_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_8_99_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_97_8_99_8_if_end:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_87_36_100_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_29_108_8_stop:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_8_108_8_if_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_106_8_108_8_if_end:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_96_36_109_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 102; @symbol_functiondef = [drawTemperature,102,13,28]; @symbol_param<0> = [dc,102,29,31]; @symbol_param<1> = [temp,102,33,37]; @symbol_param<2> = [icon,102,39,43]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 111; @symbol_functiondef = [drawTemperature,111,13,28]; @symbol_param<0> = [dc,111,29,31]; @symbol_param<1> = [temp,111,33,37]; @symbol_param<2> = [icon,111,39,43]; ]
     function drawTemperature(dc, temp, icon) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_45_105_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 103 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_45_105_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_45_105_4_stop" ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_45_114_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 112 8 ]
+        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_45_114_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_45_114_4_stop" ]
         %tempText.1 = local;
-        symbol [ tempText %tempText.1 103 12 20 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_begin:
+        symbol [ tempText %tempText.1 112 12 20 ];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_begin:
         %tmp.1 = lgetv %temp;
-        symbol [ temp %tmp.1 103 24 28 ];
+        symbol [ temp %tmp.1 112 24 28 ];
         %tmp.2 = null;
         %tmp.3 = ne %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_true:
+        bf %tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_else_false;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_true:
         %tmp.4 = lgetv %temp;
-        symbol [ temp %tmp.4 103 40 44 ];
+        symbol [ temp %tmp.4 112 40 44 ];
         %tmp.5 = as %tmp.4 { (!Null) };
-        symbol [ toString %tmp.6 103 45 53 ];
+        symbol [ toString %tmp.6 112 45 53 ];
         %tmp.6 = getv function %tmp.5 :toString;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         push %tmp.7;
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_else_false:
+        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_end;
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_else_false:
         %tmp.8 = "N/A";
         push %tmp.8;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_end:
-        %tmp.9 = phi [%tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_begin] [%tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_true] [%tmp.8 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_else_false] [%tmp.9 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_103_23_103_58_end];
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_end:
+        %tmp.9 = phi [%tmp.3 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_begin] [%tmp.7 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_true] [%tmp.8 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_else_false] [%tmp.9 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_112_23_112_58_end];
         lputv %tempText.1 %tmp.9;
-        symbol [ tempText %tempText.1 103 12 20 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 104 8 ]
+        symbol [ tempText %tempText.1 112 12 20 ];
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 113 8 ]
         %tmp.10 = lgetv %dc;
-        symbol [ dc %tmp.10 104 8 10 ];
-        symbol [ drawText %tmp.11 104 11 19 ];
+        symbol [ dc %tmp.10 113 8 10 ];
+        symbol [ drawText %tmp.11 113 11 19 ];
         %tmp.11 = getv function %tmp.10 :drawText;
         %tmp.12 = 10;
         %tmp.13 = 250;
-        symbol [ Graphics %tmp.14 104 29 37 ];
+        symbol [ Graphics %tmp.14 113 29 37 ];
         %tmp.14 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.15 104 38 48 ];
+        symbol [ FONT_SMALL %tmp.15 113 38 48 ];
         %tmp.15 = getv %tmp.14 :FONT_SMALL;
         %tmp.16 = lgetv %icon;
-        symbol [ icon %tmp.16 104 50 54 ];
+        symbol [ icon %tmp.16 113 50 54 ];
         %tmp.17 = " ";
         %tmp.18 = add %tmp.16 %tmp.17;
         %tmp.19 = lgetv %tempText.1;
-        symbol [ tempText %tmp.19 104 63 71 ];
+        symbol [ tempText %tmp.19 113 63 71 ];
         %tmp.20 = add %tmp.18 %tmp.19;
         invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15, %tmp.20);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_102_45_105_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_45_114_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 107; @symbol_functiondef = [drawDistance,107,13,25]; @symbol_param<0> = [dc,107,26,28]; @symbol_param<1> = [distance,107,30,38]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 116; @symbol_functiondef = [drawDistance,116,13,25]; @symbol_param<0> = [dc,116,26,28]; @symbol_param<1> = [distance,116,30,38]; ]
     function drawDistance(dc, distance) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_107_40_109_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 108 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_116_40_118_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 117 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 108 8 10 ];
-        symbol [ drawText %tmp.2 108 11 19 ];
+        symbol [ dc %tmp.1 117 8 10 ];
+        symbol [ drawText %tmp.2 117 11 19 ];
         %tmp.2 = getv function %tmp.1 :drawText;
         %tmp.3 = 10;
         %tmp.4 = 280;
-        symbol [ Graphics %tmp.5 108 29 37 ];
+        symbol [ Graphics %tmp.5 117 29 37 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.6 108 38 48 ];
+        symbol [ FONT_SMALL %tmp.6 117 38 48 ];
         %tmp.6 = getv %tmp.5 :FONT_SMALL;
         %tmp.7 = lgetv %distance;
-        symbol [ distance %tmp.7 108 50 58 ];
-        symbol [ toString %tmp.8 108 59 67 ];
+        symbol [ distance %tmp.7 117 50 58 ];
+        symbol [ toString %tmp.8 117 59 67 ];
         %tmp.8 = getv function %tmp.7 :toString;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = "km";
         %tmp.11 = add %tmp.9 %tmp.10;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.6, %tmp.11);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_107_40_109_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_116_40_118_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 111; @symbol_functiondef = [draw,111,13,17]; @symbol_param<0> = [dc,111,18,20]; @symbol_param<1> = [data,111,22,26]; ]
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 120; @symbol_functiondef = [draw,120,13,17]; @symbol_param<0> = [dc,120,18,20]; @symbol_param<1> = [data,120,22,26]; ]
     function draw(dc, data) {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_28_119_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 112 8 ]
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_120_28_128_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 121 8 ]
         %tmp.1 = self;
-        symbol [ drawTime %tmp.2 112 8 16 ];
+        symbol [ drawTime %tmp.2 121 8 16 ];
         %tmp.2 = getv function %tmp.1 :drawTime;
         %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 112 17 19 ];
+        symbol [ dc %tmp.3 121 17 19 ];
         %tmp.4 = lgetv %data;
-        symbol [ data %tmp.4 112 21 25 ];
+        symbol [ data %tmp.4 121 21 25 ];
         %tmp.5 = "time";
         %tmp.6 = agetv %tmp.4 %tmp.5;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 113 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 122 8 ]
         %tmp.7 = self;
-        symbol [ drawSteps %tmp.8 113 8 17 ];
+        symbol [ drawSteps %tmp.8 122 8 17 ];
         %tmp.8 = getv function %tmp.7 :drawSteps;
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 113 18 20 ];
+        symbol [ dc %tmp.9 122 18 20 ];
         %tmp.10 = lgetv %data;
-        symbol [ data %tmp.10 113 22 26 ];
+        symbol [ data %tmp.10 122 22 26 ];
         %tmp.11 = "steps";
         %tmp.12 = agetv %tmp.10 %tmp.11;
         invoke %tmp.7 %tmp.8(%tmp.9, %tmp.12);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 114 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 123 8 ]
         %tmp.13 = self;
-        symbol [ drawBattery %tmp.14 114 8 19 ];
+        symbol [ drawBattery %tmp.14 123 8 19 ];
         %tmp.14 = getv function %tmp.13 :drawBattery;
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 114 20 22 ];
+        symbol [ dc %tmp.15 123 20 22 ];
         %tmp.16 = lgetv %data;
-        symbol [ data %tmp.16 114 24 28 ];
+        symbol [ data %tmp.16 123 24 28 ];
         %tmp.17 = "battery";
         %tmp.18 = agetv %tmp.16 %tmp.17;
         invoke %tmp.13 %tmp.14(%tmp.15, %tmp.18);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 115 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 124 8 ]
         %tmp.19 = self;
-        symbol [ drawBodyBattery %tmp.20 115 8 23 ];
+        symbol [ drawBodyBattery %tmp.20 124 8 23 ];
         %tmp.20 = getv function %tmp.19 :drawBodyBattery;
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 115 24 26 ];
+        symbol [ dc %tmp.21 124 24 26 ];
         %tmp.22 = lgetv %data;
-        symbol [ data %tmp.22 115 28 32 ];
+        symbol [ data %tmp.22 124 28 32 ];
         %tmp.23 = "bodyBattery";
         %tmp.24 = agetv %tmp.22 %tmp.23;
         invoke %tmp.19 %tmp.20(%tmp.21, %tmp.24);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 116 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 125 8 ]
         %tmp.25 = self;
-        symbol [ drawBadges %tmp.26 116 8 18 ];
+        symbol [ drawBadges %tmp.26 125 8 18 ];
         %tmp.26 = getv function %tmp.25 :drawBadges;
         %tmp.27 = lgetv %dc;
-        symbol [ dc %tmp.27 116 19 21 ];
+        symbol [ dc %tmp.27 125 19 21 ];
         %tmp.28 = lgetv %data;
-        symbol [ data %tmp.28 116 23 27 ];
+        symbol [ data %tmp.28 125 23 27 ];
         %tmp.29 = "badges";
         %tmp.30 = agetv %tmp.28 %tmp.29;
         invoke %tmp.25 %tmp.26(%tmp.27, %tmp.30);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 117 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 126 8 ]
         %tmp.31 = self;
-        symbol [ drawTemperature %tmp.32 117 8 23 ];
+        symbol [ drawTemperature %tmp.32 126 8 23 ];
         %tmp.32 = getv function %tmp.31 :drawTemperature;
         %tmp.33 = lgetv %dc;
-        symbol [ dc %tmp.33 117 24 26 ];
+        symbol [ dc %tmp.33 126 24 26 ];
         %tmp.34 = lgetv %data;
-        symbol [ data %tmp.34 117 28 32 ];
+        symbol [ data %tmp.34 126 28 32 ];
         %tmp.35 = "temperature";
         %tmp.36 = agetv %tmp.34 %tmp.35;
         %tmp.37 = lgetv %data;
-        symbol [ data %tmp.37 117 49 53 ];
+        symbol [ data %tmp.37 126 49 53 ];
         %tmp.38 = "weatherIcon";
         %tmp.39 = agetv %tmp.37 %tmp.38;
         invoke %tmp.31 %tmp.32(%tmp.33, %tmp.36, %tmp.39);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 118 8 ]
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 127 8 ]
         %tmp.40 = self;
-        symbol [ drawDistance %tmp.41 118 8 20 ];
+        symbol [ drawDistance %tmp.41 127 8 20 ];
         %tmp.41 = getv function %tmp.40 :drawDistance;
         %tmp.42 = lgetv %dc;
-        symbol [ dc %tmp.42 118 21 23 ];
+        symbol [ dc %tmp.42 127 21 23 ];
         %tmp.43 = lgetv %data;
-        symbol [ data %tmp.43 118 25 29 ];
+        symbol [ data %tmp.43 127 25 29 ];
         %tmp.44 = "distance";
         %tmp.45 = agetv %tmp.43 %tmp.44;
         invoke %tmp.40 %tmp.41(%tmp.42, %tmp.45);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_111_28_119_4_stop:
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_120_28_128_4_stop:
     }
-    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 121; @symbol_functiondef = [onUpdate,121,13,21]; ]
-    function onUpdate() {
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 122 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %dc.1 = local;
-        symbol [ dc %dc.1 122 12 14 ];
-        symbol [ WatchUi %tmp.1 122 17 24 ];
-        %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ getDisplayContext %tmp.2 122 25 42 ];
-        %tmp.2 = getv function %tmp.1 :getDisplayContext;
-        %tmp.3 = invoke %tmp.1 %tmp.2();
-        lputv %dc.1 %tmp.3;
-        symbol [ dc %dc.1 122 12 14 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 123 8 ]
-        %tmp.4 = lgetv %dc.1;
-        symbol [ dc %tmp.4 123 8 10 ];
-        symbol [ setColor %tmp.5 123 11 19 ];
-        %tmp.5 = getv function %tmp.4 :setColor;
-        symbol [ Graphics %tmp.6 123 20 28 ];
-        %tmp.6 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.7 123 29 40 ];
-        %tmp.7 = getv %tmp.6 :COLOR_WHITE;
-        invoke %tmp.4 %tmp.5(%tmp.7);
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 124 8 ]
-        %tmp.8 = lgetv %dc.1;
-        symbol [ dc %tmp.8 124 8 10 ];
-        symbol [ clear %tmp.9 124 11 16 ];
-        %tmp.9 = getv function %tmp.8 :clear;
-        invoke %tmp.8 %tmp.9();
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 126 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %time.2 = local;
-        symbol [ time %time.2 126 12 16 ];
-        symbol [ System %tmp.10 126 19 25 ];
-        %tmp.10 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.11 126 26 38 ];
-        %tmp.11 = getv function %tmp.10 :getClockTime;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        lputv %time.2 %tmp.12;
-        symbol [ time %time.2 126 12 16 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 127 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %info.3 = local;
-        symbol [ info %info.3 127 12 16 ];
-        symbol [ ActivityMonitor %tmp.13 127 19 34 ];
-        %tmp.13 = getm $.Toybox.ActivityMonitor;
-        symbol [ getInfo %tmp.14 127 35 42 ];
-        %tmp.14 = getv function %tmp.13 :getInfo;
-        %tmp.15 = invoke %tmp.13 %tmp.14();
-        lputv %info.3 %tmp.15;
-        symbol [ info %info.3 127 12 16 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 128 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %steps.4 = local;
-        symbol [ steps %steps.4 128 12 17 ];
-        %tmp.16 = lgetv %info.3;
-        symbol [ info %tmp.16 128 20 24 ];
-        %tmp.17 = "steps";
-        %tmp.18 = agetv %tmp.16 %tmp.17;
-        lputv %steps.4 %tmp.18;
-        symbol [ steps %steps.4 128 12 17 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 129 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %distance.5 = local;
-        symbol [ distance %distance.5 129 12 20 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_begin:
-        %tmp.19 = lgetv %info.3;
-        symbol [ info %tmp.19 129 24 28 ];
-        %tmp.20 = "distance";
-        %tmp.21 = agetv %tmp.19 %tmp.20;
-        %tmp.22 = null;
-        %tmp.23 = ne %tmp.21 %tmp.22;
-        bf %tmp.23 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_true:
-        %tmp.24 = lgetv %info.3;
-        symbol [ info %tmp.24 129 53 57 ];
-        %tmp.25 = "distance";
-        %tmp.26 = agetv %tmp.24 %tmp.25;
-        symbol [ toFloat %tmp.27 129 70 77 ];
-        %tmp.27 = getv function %tmp.26 :toFloat;
-        %tmp.28 = invoke %tmp.26 %tmp.27();
-        %tmp.29 = 1000.0;
-        %tmp.30 = div %tmp.28 %tmp.29;
-        symbol [ toNumber %tmp.31 129 90 98 ];
-        %tmp.31 = getv function %tmp.30 :toNumber;
-        %tmp.32 = invoke %tmp.30 %tmp.31();
-        push %tmp.32;
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_else_false:
-        %tmp.33 = 0;
-        push %tmp.33;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_end:
-        %tmp.34 = phi [%tmp.23 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_begin] [%tmp.32 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_true] [%tmp.33 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_else_false] [%tmp.34 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_129_23_129_103_end];
-        lputv %distance.5 %tmp.34;
-        symbol [ distance %distance.5 129 12 20 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 130 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %battery.6 = local;
-        symbol [ battery %battery.6 130 12 19 ];
-        symbol [ System %tmp.35 130 22 28 ];
-        %tmp.35 = getm $.Toybox.System;
-        symbol [ getSystemStats %tmp.36 130 29 43 ];
-        %tmp.36 = getv function %tmp.35 :getSystemStats;
-        %tmp.37 = invoke %tmp.35 %tmp.36();
-        symbol [ battery %tmp.38 130 46 53 ];
-        %tmp.38 = getv %tmp.37 :battery;
-        symbol [ toNumber %tmp.39 130 54 62 ];
-        %tmp.39 = getv function %tmp.38 :toNumber;
-        %tmp.40 = invoke %tmp.38 %tmp.39();
-        lputv %battery.6 %tmp.40;
-        symbol [ battery %battery.6 130 12 19 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 131 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %bodyBattery.7 = local;
-        symbol [ bodyBattery %bodyBattery.7 131 12 23 ];
-        %tmp.41 = lgetv %info.3;
-        symbol [ info %tmp.41 131 26 30 ];
-        %tmp.42 = "bodyBattery";
-        %tmp.43 = agetv %tmp.41 %tmp.42;
-        lputv %bodyBattery.7 %tmp.43;
-        symbol [ bodyBattery %bodyBattery.7 131 12 23 ];
+    [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 131; @symbol_functiondef = [onUpdate,131,13,21]; @symbol_param<0> = [dc,131,22,24]; ]
+    function onUpdate(dc) {
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_131_26_137_4_start:
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 132 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 132 8 10 ];
+        symbol [ setColor %tmp.2 132 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 132 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 132 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 132 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 132 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
 [ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 133 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %settings.8 = local;
-        symbol [ settings %settings.8 133 12 20 ];
-        symbol [ System %tmp.44 133 23 29 ];
-        %tmp.44 = getm $.Toybox.System;
-        symbol [ getDeviceSettings %tmp.45 133 30 47 ];
-        %tmp.45 = getv function %tmp.44 :getDeviceSettings;
-        %tmp.46 = invoke %tmp.44 %tmp.45();
-        lputv %settings.8 %tmp.46;
-        symbol [ settings %settings.8 133 12 20 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 134 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %badges.9 = local;
-        symbol [ badges %badges.9 134 12 18 ];
-        %tmp.47 = newd 3;
-        %tmp.48 = "bluetooth";
-        %tmp.49 = lgetv %settings.8;
-        symbol [ settings %tmp.49 135 27 35 ];
-        symbol [ phoneConnected %tmp.50 135 36 50 ];
-        %tmp.50 = getv %tmp.49 :phoneConnected;
-        %tmp.51 = dup %tmp.47;
-        %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
-        %tmp.53 = "notification";
-        %tmp.54 = lgetv %settings.8;
-        symbol [ settings %tmp.54 136 31 39 ];
-        symbol [ notificationCount %tmp.55 136 40 57 ];
-        %tmp.55 = getv %tmp.54 :notificationCount;
-        %tmp.56 = 0;
-        %tmp.57 = gt %tmp.55 %tmp.56;
-        %tmp.58 = dup %tmp.52;
-        %tmp.59 = aputv %tmp.58 %tmp.53 %tmp.57;
-        %tmp.60 = "alarm";
-        %tmp.61 = lgetv %settings.8;
-        symbol [ settings %tmp.61 137 24 32 ];
-        symbol [ alarmCount %tmp.62 137 33 43 ];
-        %tmp.62 = getv %tmp.61 :alarmCount;
-        %tmp.63 = 0;
-        %tmp.64 = gt %tmp.62 %tmp.63;
-        %tmp.65 = dup %tmp.59;
-        %tmp.66 = aputv %tmp.65 %tmp.60 %tmp.64;
-        lputv %badges.9 %tmp.66;
-        symbol [ badges %badges.9 134 12 18 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 140 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %conditions.10 = local;
-        symbol [ conditions %conditions.10 140 12 22 ];
-        symbol [ Weather %tmp.67 140 25 32 ];
-        %tmp.67 = getm $.Toybox.Weather;
-        symbol [ getCurrentConditions %tmp.68 140 33 53 ];
-        %tmp.68 = getv function %tmp.67 :getCurrentConditions;
-        %tmp.69 = invoke %tmp.67 %tmp.68();
-        lputv %conditions.10 %tmp.69;
-        symbol [ conditions %conditions.10 140 12 22 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 141 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %temp.11 = local;
-        symbol [ temp %temp.11 141 12 16 ];
-        %tmp.70 = null;
-        lputv %temp.11 %tmp.70;
-        symbol [ temp %temp.11 141 12 16 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 142 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %weatherIcon.12 = local;
-        symbol [ weatherIcon %weatherIcon.12 142 12 23 ];
-        %tmp.71 = "?";
-        lputv %weatherIcon.12 %tmp.71;
-        symbol [ weatherIcon %weatherIcon.12 142 12 23 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 143 8 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_8_161_8_if_stmt:
-        %tmp.72 = lgetv %conditions.10;
-        symbol [ conditions %tmp.72 143 12 22 ];
-        %tmp.73 = null;
-        %tmp.74 = ne %tmp.72 %tmp.73;
-        bf %tmp.74 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_8_161_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_8_161_8_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_32_161_8_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 144 12 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_12_146_12_if_stmt:
-        %tmp.75 = lgetv %conditions.10;
-        symbol [ conditions %tmp.75 144 16 26 ];
-        %tmp.76 = as %tmp.75 { (!Null) };
-        symbol [ temperature %tmp.77 144 27 38 ];
-        %tmp.77 = getv %tmp.76 :temperature;
-        %tmp.78 = null;
-        %tmp.79 = ne %tmp.77 %tmp.78;
-        bf %tmp.79 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_12_146_12_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_12_146_12_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_48_146_12_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 145 16 ]
-        %tmp.80 = lgetv %conditions.10;
-        symbol [ conditions %tmp.80 145 23 33 ];
-        %tmp.81 = as %tmp.80 { (!Null) };
-        symbol [ temperature %tmp.82 145 34 45 ];
-        %tmp.82 = getv %tmp.81 :temperature;
-        lputv %temp.11 %tmp.82;
-        symbol [ temp %temp.11 145 16 20 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_48_146_12_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_12_146_12_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_144_12_146_12_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 148 12 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_32_161_8_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_32_161_8_stop" ]
-        %cond.13 = local;
-        symbol [ cond %cond.13 148 16 20 ];
-        %tmp.83 = lgetv %conditions.10;
-        symbol [ conditions %tmp.83 148 23 33 ];
-        %tmp.84 = as %tmp.83 { (!Null) };
-        symbol [ condition %tmp.85 148 34 43 ];
-        %tmp.85 = getv %tmp.84 :condition;
-        lputv %cond.13 %tmp.85;
-        symbol [ cond %cond.13 148 16 20 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 149 12 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_stmt:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_16_149_67_begin:
-        %tmp.86 = lgetv %cond.13;
-        symbol [ cond %tmp.86 149 16 20 ];
-        symbol [ Weather %tmp.87 149 24 31 ];
-        %tmp.87 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLEAR %tmp.88 149 32 47 ];
-        %tmp.88 = getv %tmp.87 :CONDITION_CLEAR;
-        %tmp.89 = eq %tmp.86 %tmp.88;
-        bt %tmp.89 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_true;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_51_149_67_false:
-        %tmp.90 = lgetv %cond.13;
-        symbol [ cond %tmp.90 149 51 55 ];
-        symbol [ Weather %tmp.91 149 59 66 ];
-        %tmp.91 = getm $.Toybox.Weather;
-        symbol [ CONDITION_MOSTLY_CLEAR %tmp.92 149 67 89 ];
-        %tmp.92 = getv %tmp.91 :CONDITION_MOSTLY_CLEAR;
-        %tmp.93 = eq %tmp.90 %tmp.92;
-        push %tmp.93;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_51_149_67_end:
-        %tmp.94 = phi [%tmp.89 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_16_149_67_begin] [%tmp.93 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_51_149_67_false] [%tmp.94 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_51_149_67_end];
-        bf %tmp.94 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_91_151_12_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 150 16 ]
-        %tmp.95 = "SUN";
-        lputv %weatherIcon.12 %tmp.95;
-        symbol [ weatherIcon %weatherIcon.12 150 16 27 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_91_151_12_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_false:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 152 17 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_stmt:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_21_152_71_begin:
-        %tmp.96 = lgetv %cond.13;
-        symbol [ cond %tmp.96 152 21 25 ];
-        symbol [ Weather %tmp.97 152 29 36 ];
-        %tmp.97 = getm $.Toybox.Weather;
-        symbol [ CONDITION_RAIN %tmp.98 152 37 51 ];
-        %tmp.98 = getv %tmp.97 :CONDITION_RAIN;
-        %tmp.99 = eq %tmp.96 %tmp.98;
-        bt %tmp.99 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_true;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_55_152_71_false:
-        %tmp.100 = lgetv %cond.13;
-        symbol [ cond %tmp.100 152 55 59 ];
-        symbol [ Weather %tmp.101 152 63 70 ];
-        %tmp.101 = getm $.Toybox.Weather;
-        symbol [ CONDITION_LIGHT_RAIN %tmp.102 152 71 91 ];
-        %tmp.102 = getv %tmp.101 :CONDITION_LIGHT_RAIN;
-        %tmp.103 = eq %tmp.100 %tmp.102;
-        push %tmp.103;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_55_152_71_end:
-        %tmp.104 = phi [%tmp.99 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_21_152_71_begin] [%tmp.103 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_55_152_71_false] [%tmp.104 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_55_152_71_end];
-        bf %tmp.104 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_93_154_12_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 153 16 ]
-        %tmp.105 = "RAIN";
-        lputv %weatherIcon.12 %tmp.105;
-        symbol [ weatherIcon %weatherIcon.12 153 16 27 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_93_154_12_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_false:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 155 17 ]
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_stmt:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_21_155_73_begin:
-        %tmp.106 = lgetv %cond.13;
-        symbol [ cond %tmp.106 155 21 25 ];
-        symbol [ Weather %tmp.107 155 29 36 ];
-        %tmp.107 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLOUDY %tmp.108 155 37 53 ];
-        %tmp.108 = getv %tmp.107 :CONDITION_CLOUDY;
-        %tmp.109 = eq %tmp.106 %tmp.108;
-        bt %tmp.109 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_true;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_57_155_73_false:
-        %tmp.110 = lgetv %cond.13;
-        symbol [ cond %tmp.110 155 57 61 ];
-        symbol [ Weather %tmp.111 155 65 72 ];
-        %tmp.111 = getm $.Toybox.Weather;
-        symbol [ CONDITION_PARTLY_CLOUDY %tmp.112 155 73 96 ];
-        %tmp.112 = getv %tmp.111 :CONDITION_PARTLY_CLOUDY;
-        %tmp.113 = eq %tmp.110 %tmp.112;
-        push %tmp.113;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_57_155_73_end:
-        %tmp.114 = phi [%tmp.109 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_21_155_73_begin] [%tmp.113 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_57_155_73_false] [%tmp.114 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_57_155_73_end];
-        bf %tmp.114 @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_else_false;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_true:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_98_157_12_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 156 16 ]
-        %tmp.115 = "CLOUD";
-        lputv %weatherIcon.12 %tmp.115;
-        symbol [ weatherIcon %weatherIcon.12 156 16 27 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_98_157_12_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_else_false:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_158_17_160_12_start:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 159 16 ]
-        %tmp.116 = "?";
-        lputv %weatherIcon.12 %tmp.116;
-        symbol [ weatherIcon %weatherIcon.12 159 16 27 ];
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_158_17_160_12_stop:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_155_17_160_12_if_end:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_152_17_160_12_if_end:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_149_12_160_12_if_end:
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_32_161_8_stop:
-        goto @_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_8_161_8_if_end;
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_143_8_161_8_if_end:
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 163 8 ]
-        [ "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_start" "_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop" ]
-        %data.14 = local;
-        symbol [ data %data.14 163 12 16 ];
-        %tmp.117 = newd 8;
-        %tmp.118 = "time";
-        %tmp.119 = lgetv %time.2;
-        symbol [ time %tmp.119 164 22 26 ];
-        %tmp.120 = dup %tmp.117;
-        %tmp.121 = aputv %tmp.120 %tmp.118 %tmp.119;
-        %tmp.122 = "steps";
-        %tmp.123 = lgetv %steps.4;
-        symbol [ steps %tmp.123 165 23 28 ];
-        %tmp.124 = dup %tmp.121;
-        %tmp.125 = aputv %tmp.124 %tmp.122 %tmp.123;
-        %tmp.126 = "battery";
-        %tmp.127 = lgetv %battery.6;
-        symbol [ battery %tmp.127 166 25 32 ];
-        %tmp.128 = dup %tmp.125;
-        %tmp.129 = aputv %tmp.128 %tmp.126 %tmp.127;
-        %tmp.130 = "bodyBattery";
-        %tmp.131 = lgetv %bodyBattery.7;
-        symbol [ bodyBattery %tmp.131 167 29 40 ];
-        %tmp.132 = dup %tmp.129;
-        %tmp.133 = aputv %tmp.132 %tmp.130 %tmp.131;
-        %tmp.134 = "badges";
-        %tmp.135 = lgetv %badges.9;
-        symbol [ badges %tmp.135 168 24 30 ];
-        %tmp.136 = dup %tmp.133;
-        %tmp.137 = aputv %tmp.136 %tmp.134 %tmp.135;
-        %tmp.138 = "temperature";
-        %tmp.139 = lgetv %temp.11;
-        symbol [ temp %tmp.139 169 29 33 ];
-        %tmp.140 = dup %tmp.137;
-        %tmp.141 = aputv %tmp.140 %tmp.138 %tmp.139;
-        %tmp.142 = "weatherIcon";
-        %tmp.143 = lgetv %weatherIcon.12;
-        symbol [ weatherIcon %tmp.143 170 29 40 ];
-        %tmp.144 = dup %tmp.141;
-        %tmp.145 = aputv %tmp.144 %tmp.142 %tmp.143;
-        %tmp.146 = "distance";
-        %tmp.147 = lgetv %distance.5;
-        symbol [ distance %tmp.147 171 26 34 ];
-        %tmp.148 = dup %tmp.145;
-        %tmp.149 = aputv %tmp.148 %tmp.146 %tmp.147;
-        lputv %data.14 %tmp.149;
-        symbol [ data %data.14 163 12 16 ];
-[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 174 8 ]
-        %tmp.150 = self;
-        symbol [ draw %tmp.151 174 8 12 ];
-        %tmp.151 = getv function %tmp.150 :draw;
-        %tmp.152 = lgetv %dc.1;
-        symbol [ dc %tmp.152 174 13 15 ];
-        %tmp.153 = lgetv %data.14;
-        symbol [ data %tmp.153 174 17 21 ];
-        invoke %tmp.150 %tmp.151(%tmp.152, %tmp.153);
-_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_121_24_175_4_stop:
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 133 8 10 ];
+        symbol [ clear %tmp.8 133 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc" 136 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 136 8 10 ];
+        symbol [ drawText %tmp.10 136 11 19 ];
+        %tmp.10 = getv function %tmp.9 :drawText;
+        %tmp.11 = 40;
+        %tmp.12 = 120;
+        symbol [ Graphics %tmp.13 136 29 37 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.14 136 38 48 ];
+        %tmp.14 = getv %tmp.13 :FONT_SMALL;
+        %tmp.15 = "HELLO, WHOLE WORLD";
+        symbol [ Graphics %tmp.16 136 72 80 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.17 136 81 98 ];
+        %tmp.17 = getv %tmp.16 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.14, %tmp.15, %tmp.17);
+_Users_rich_fernlabsdev_Garmin_Faces_myFace_source_myFaceView_mc_131_26_137_4_stop:
     }
 }
 [ @file = "/Users/rich/fernlabsdev/Garmin/Faces/myFace/source/myFaceView.mc"; @line = 1; ]
